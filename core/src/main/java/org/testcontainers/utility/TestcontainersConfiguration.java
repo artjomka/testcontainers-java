@@ -65,7 +65,7 @@ public class TestcontainersConfiguration {
 
     @Deprecated
     public String getSocatContainerImage() {
-        return String.valueOf(properties.getOrDefault("socat.container.image", "alpine/socat:latest"));
+        return String.valueOf(properties.getOrDefault("socat.container.image", "alpine/socat:latest")).trim();
     }
 
     public DockerImageName getSocatDockerImageName() {
